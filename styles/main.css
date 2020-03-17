@@ -47,14 +47,20 @@ h1 {
       letter-spacing: 3px; }
       .header-navigation__link::after {
         content: "";
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        transition: opacity 0.3s, -webkit-transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
         position: absolute;
         height: 1.5px;
+        -webkit-transform: scale(0.1);
+                transform: scale(0.1);
         width: 100%;
         bottom: -4px;
         left: 0;
+        opacity: 0;
         background-color: #ff9c8e;
-        border-radius: 1px;
-        display: none; }
+        border-radius: 1px; }
     .header-navigation__hire {
       font-style: normal;
       font-weight: bold;
@@ -123,7 +129,9 @@ h1 {
     display: block; }
 
 .header-navigation__item:hover .header-navigation__link::after {
-  display: block; }
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1); }
 
 html {
   background-color: #f2f9ff;
