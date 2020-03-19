@@ -1500,6 +1500,16 @@ li {
   -webkit-transform: scale(1);
           transform: scale(1); }
 
+@media (min-width: 1601px) {
+  .slider__wrap {
+    position: absolute;
+    width: 1600px;
+    height: 680px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%); } }
+
 @media (max-width: 1420px) {
   .vision__title {
     font-size: 40px; }
