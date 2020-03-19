@@ -1,64 +1,37 @@
-.slider__container {
-  position: absolute;
-  width: 687px;
-  height: 680px;
-  overflow: hidden;
-  bottom: 0;
-  right: 0; }
-
-.slider-right__arrow {
-  position: absolute;
-  bottom: 66px;
-  left: 88px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #fff; }
-
-.slider-left__arrow {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #fff;
-  position: absolute;
-  bottom: 66px;
-  left: 48px; }
-
-.slider-left__arrow:hover, .slider-right__arrow:hover {
-  opacity: 0.6; }
-
-.slider__photo {
-  border-radius: 200px 0 0; }
-
-.slider__text {
-  position: absolute;
-  bottom: 48px;
-  left: 144px; }
-
-.slider__intro {
-  font-weight: bold;
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #fff; }
-
-.slider__quote {
-  font-family: Open Sans, sans-serif;
-  font-size: 14px;
-  color: #fff; }
-
 .sldr {
   position: relative;
   width: 10000px;
   height: 680px; }
+  .sldr__container {
+    position: absolute;
+    width: 687px;
+    height: 680px;
+    overflow: hidden;
+    bottom: 0;
+    right: 0; }
+  .sldr-left__arrow:hover, .sldr-right__arrow:hover {
+    opacity: 0.6; }
+  .sldr__photo {
+    border-radius: 200px 0 0; }
+  .sldr__text {
+    position: absolute;
+    bottom: 48px;
+    left: 144px; }
+  .sldr__intro {
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff; }
+  .sldr__quote {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #fff; }
 
 .sldr img {
   float: left; }
 
-.arrow_img {
+.arrow-img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -69,5 +42,26 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.button__right-arrow {
+  position: absolute;
+  bottom: 66px;
+  left: 88px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff; }
+
+.button__left-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+  position: absolute;
+  bottom: 66px;
+  left: 48px; }
 
 /*# sourceMappingURL=slide.css.map */
